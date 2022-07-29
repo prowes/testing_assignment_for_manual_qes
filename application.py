@@ -24,11 +24,11 @@ def enter():
         elif form.action.data == '\\':
             result = form.first_digit.data / form.second_digit.data
         return (f"Your result for {form.action.data} of {first} and {second} is {result}")
-    return (f'<html><head><title>Calculator</title></head><body><form action="" method="post" novalidate>{form.hidden_tag()}<p>{form.first_digit.label}<br>{form.first_digit(size=7)}</p><p>{form.second_digit.label}<br>{ form.second_digit(size=7)}<p>{form.action.label}<br>{form.action(size=7)}</p<p>{form.submit()}</p></form></body></html>')
+    return (f'<html><head><title>Calculatr</title></head><body><form action="" method="post" novalidate>{form.hidden_tag()}<p>{form.first_digit.label}<br>{form.first_digit(size=7)}</p><p>{form.second_digit.label}<br>{ form.second_digit(size=7)}<p>{form.action.label}<br>{form.action(size=7)}</p><p>{form.submit()}</p><p>{form.submit()}</p></form></body></html>')
 
 
 class EnterForm(FlaskForm):
     first_digit = IntegerField('First', validators=[DataRequired()])
     second_digit = IntegerField('Second', validators=[DataRequired()])
-    action = RadioField('Action', choices=[('+', 'plus'), ('-', 'minus'), ('*', 'multi'), ('\\', 'div')])
-    submit = SubmitField('Randomize')
+    action = RadioField('Action', choices=[('+', 'plus'), ('-', 'minus'), ('*', 'multiply'), ('\\', 'divide')])
+    submit = SubmitField('Count')

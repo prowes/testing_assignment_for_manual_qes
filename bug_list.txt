@@ -1,0 +1,11 @@
+Bug list:
+- Instead of multiplication, adding happens
+- Typo in the title (Calculatr)
+- UI can be improved
+- If you don't choose an action then the result and the action is None
+- Digit '3' disappears from the end result
+- Two 'count' buttons are shown
+- Internal server error if:
+-- Any of numbers is not given
+-- Division by 0
+-- You try symbols other from numbers
