@@ -1,9 +1,3 @@
-# testing_assignment_for_manual_qes
+# Testing assignment for manual testers.
 The calculator with a bunch of bugs.
-
-multiply = adding
-digit 3 does not work
-division by 0 -> server error
-long: error: to do
-empty: error
-float: fail
+Written of Flask, Python.
