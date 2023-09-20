@@ -1,5 +1,5 @@
 # Testing assignment for manual testers.
-The calculator with a bunch of bugs.
+A calculator with a bunch of bugs.
 Written of Flask, Python.
 
 You can install it:
