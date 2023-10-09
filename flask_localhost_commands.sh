@@ -1,3 +1,4 @@
+rm -r flapp
 mkdir flapp
 cd flapp
 python3 -m venv venv
