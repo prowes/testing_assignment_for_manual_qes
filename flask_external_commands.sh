@@ -5,6 +5,6 @@ python3 -m venv venv
 source venv/bin/activate
 git clone https://github.com/prowes/testing_assignment_for_manual_qes.git
 pip install -r /var/lib/jenkins/workspace/WebApp/flapp/testing_assignment_for_manual_qes/requirements.txt
-export FLASK_APP=//var/lib/jenkins/workspace/WebApp/flapp/testing_assignment_for_manual_qes/application.py
+export FLASK_APP=/var/lib/jenkins/workspace/WebApp/flapp/testing_assignment_for_manual_qes/application.py
 cd testing_assignment_for_manual_qes
 gunicorn -b 0.0.0.0:8081 application:application
