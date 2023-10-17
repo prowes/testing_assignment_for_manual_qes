@@ -1,8 +1,9 @@
-# remove leftovers from previous runs
-# systemctl disable application_jenkins uncomment for 2nd launch etc
-# systemctl stop application_jenkins
+# remove leftovers from previous runs, please comment if it is a first launch
+sudo systemctl disable application_jenkins
+sudo systemctl stop application_jenkins
 rm -rf /var/lib/jenkins/workspace/WebApp/flapp
 rm -f /etc/systemd/system/application_jenkins.service
+sudo systemctl daemon-reload
 
 # prepare all the env and stuff...
 mkdir flapp
