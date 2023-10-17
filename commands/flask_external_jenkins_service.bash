@@ -1,8 +1,8 @@
 # remove leftovers from previous runs
-systemctl disable application_ssh
-systemctl stop application_ssh
+# systemctl disable application_jenkins uncomment for 2nd launch etc
+# systemctl stop application_jenkins
 rm -rf /var/lib/jenkins/workspace/WebApp/flapp
-rm -f /etc/systemd/system/application_ssh.service
+rm -f /etc/systemd/system/application_jenkins.service
 
 # prepare all the env and stuff...
 mkdir flapp
@@ -15,6 +15,6 @@ export FLASK_APP=/var/lib/jenkins/workspace/WebApp/flapp/testing_assignment_for_
 cd testing_assignment_for_manual_qes
 
 # run the service
-cp application_ssh.service /etc/systemd/system/
-systemctl start /etc/systemd/system/application_ssh.service
-systemctl enable application_ssh
+cp application_jenkins.service /etc/systemd/system/
+sudo systemctl start application_jenkins
+sudo systemctl enable application_jenkins

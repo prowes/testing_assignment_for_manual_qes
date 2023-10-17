@@ -1,0 +1,12 @@
+[Unit]
+Description=Gunicorn instance to serve a Flask app in Jenkins
+After=network.target
+
+[Service]
+User=jenkins
+WorkingDirectory=/var/lib/jenkins/workspace/WebApp/flapp/testing_assignment_for_manual_qes/
+Environment="PATH=/var/lib/jenkins/workspace/WebApp/venv/bin"
+ExecStart=/var/lib/jenkins/workspace/WebApp/venv/bin/gunicorn --bind 0.0.0.0:8081 application:application
+
+[Install]
+WantedBy=multi-user.target
