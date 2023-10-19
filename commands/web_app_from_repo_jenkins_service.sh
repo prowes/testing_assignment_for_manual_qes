@@ -6,8 +6,6 @@ sudo systemctl daemon-reload
 
 # prepare all the env and stuff...
 cd flapp
-ls
-pwd
 python3 -m venv venv
 source venv/bin/activate
 pip3 install -r /var/lib/jenkins/workspace/WebApp/flapp/requirements.txt
