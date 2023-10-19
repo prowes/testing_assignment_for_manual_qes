@@ -3,6 +3,8 @@ sudo systemctl disable application_jenkins
 sudo systemctl stop application_jenkins
 rm -f /etc/systemd/system/application_jenkins.service
 sudo systemctl daemon-reload
+ls
+pwd
 
 # prepare all the env and stuff...
 cd ../flapp/
