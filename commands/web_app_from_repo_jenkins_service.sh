@@ -9,10 +9,10 @@ cd flapp
 ls
 pwd
 python3 -m venv venv
-pip install -r /var/lib/jenkins/workspace/WebApp/flapp/requirements.txt
+pip3 install -r /var/lib/jenkins/workspace/WebApp/flapp/requirements.txt
 export FLASK_APP=/var/lib/jenkins/workspace/WebApp/flapp/application.py
 
 # run the service
-cp /var/lib/jenkins/workspace/WebApp/commands/application_jenkins.service /etc/systemd/system/
+cp /var/lib/jenkins/workspace/WebApp/flapp/application_jenkins.service /etc/systemd/system/
 sudo systemctl enable application_jenkins
 sudo systemctl start application_jenkins
