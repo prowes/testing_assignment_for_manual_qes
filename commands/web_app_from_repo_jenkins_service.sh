@@ -9,6 +9,7 @@ cd flapp
 ls
 pwd
 python3 -m venv venv
+source venv/bin/activate
 pip3 install -r /var/lib/jenkins/workspace/WebApp/flapp/requirements.txt
 export FLASK_APP=/var/lib/jenkins/workspace/WebApp/flapp/application.py
 
