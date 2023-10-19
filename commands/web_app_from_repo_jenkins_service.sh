@@ -11,7 +11,6 @@ pwd
 python3 -m venv venv
 pip install -r /var/lib/jenkins/workspace/WebApp/flapp/requirements.txt
 export FLASK_APP=/var/lib/jenkins/workspace/WebApp/flapp/application.py
-cd testing_assignment_for_manual_qes
 
 # run the service
 cp /var/lib/jenkins/workspace/WebApp/commands/application_jenkins.service /etc/systemd/system/
