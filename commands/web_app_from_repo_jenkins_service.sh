@@ -9,6 +9,7 @@ sudo systemctl daemon-reload
 pwd
 cd ..
 pwd
+ls
 #cd ../flapp/
 #python3 -m venv venv
 #pip install -r /var/lib/jenkins/workspace/WebApp/flapp/testing_assignment_for_manual_qes/requirements.txt
