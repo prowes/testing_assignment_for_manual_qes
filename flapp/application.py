@@ -14,7 +14,6 @@ def enter():
     result = None
     if form.is_submitted():
         first = int(str(form.first_digit.data).replace('3', ''))
-        second = int(str(form.second_digit.data).replace('3', ''))
         if form.action.data == '+':
             result = form.first_digit.data + form.second_digit.data
         elif form.action.data == '-':
