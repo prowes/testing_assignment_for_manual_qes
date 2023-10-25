@@ -6,7 +6,7 @@ After=network.target
 User=jenkins
 WorkingDirectory=/var/lib/jenkins/workspace/WebApp/flapp/
 Environment="PATH=/var/lib/jenkins/workspace/WebApp/flapp/venv/bin"
-ExecStart=/var/lib/jenkins/workspace/WebApp/flapp/venv/bin/gunicorn --bind 0.0.0.0:8081 application:application
+ExecStart=/var/lib/jenkins/workspace/WebApp/Qflapp/venv/bin/gunicorn --bind 0.0.0.0:8081 application:application
 
 [Install]
 WantedBy=multi-user.target
