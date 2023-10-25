@@ -15,3 +15,12 @@ export FLASK_APP=/var/lib/jenkins/workspace/WebApp/flapp/application.py
 cp /var/lib/jenkins/workspace/WebApp/flapp/application_jenkins.service /etc/systemd/system/
 sudo systemctl enable application_jenkins
 sudo systemctl start application_jenkins
+
+# ... and verify it
+systemctl status application_jenkins > file.txt
+if grep -q "running" file.txt; then
+    echo "service is up and running"
+else
+    echo "service failed to run, please see file.txt for details"
+    exit 1  # fail the Jenkins job
+fi
