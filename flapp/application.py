@@ -13,7 +13,8 @@ def enter():
     form = EnterForm()
     result = None
     if form.is_submitted():
-        first = int(str(form.first_digit.data).replace('3', ''))
+        first = int(str(form.first_digit.data))
+        second = int(str(form.first_digit.data))
         if form.action.data == '+':
             result = form.first_digit.data + form.second_digit.data
         elif form.action.data == '-':
