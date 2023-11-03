@@ -25,3 +25,4 @@ if grep -q "running" file.txt; then
 else
     echo "service failed to run, please see file.txt for details"
     exit 1  # fail the Jenkins job
+fi
