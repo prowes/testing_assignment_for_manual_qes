@@ -20,7 +20,7 @@ def enter():
         elif form.action.data == '-':
             result = form.first_digit.data - form.second_digit.data
         elif form.action.data == '*':
-            result = form.first_digit.data + form.second_digit.data
+            result = form.first_digit.data * form.second_digit.data
         elif form.action.data == '\\':
             result = form.first_digit.data / form.second_digit.data
         return (f"Your result is <p id='result'>{result}</p>")
