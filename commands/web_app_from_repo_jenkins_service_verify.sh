@@ -20,8 +20,7 @@ sudo systemctl start application_jenkins
 systemctl status application_jenkins > file.txt
 if grep -q "running" file.txt; then
     ADDRESS=$(curl https://checkip.amazonaws.com/)
-    echo "service is up and running"
-    echo "http://$ADDRESS:8081"
+    echo "service is up and running, go to http://$ADDRESS:8081"
 else
     echo "service failed to run, please see file.txt for details"
     exit 1  # fail the Jenkins job
